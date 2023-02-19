@@ -1,0 +1,555 @@
+/* body{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Mulish', sans-serif;
+} */
+/* h1 {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Mulish', sans-serif;
+    font-size: 82px;
+} */
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    /* width: 1024px; */
+    box-sizing: border-box;
+}
+
+
+#header {
+
+}
+
+.header-container {
+    max-width: 100%;
+    height: 30%;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-img{
+    max-width: 100%;
+    max-height: 100%;
+    background-size: cover;
+    transition: transform 0.5s ease-out;
+}
+
+.header-title{
+    position: absolute;
+    top: -4%;
+    right: 4%;
+    font-size: 82px;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    text-shadow: 2px 2px 2px #333, -2px -2px 2px #ccc;
+
+}   
+
+/* section */
+.container{
+
+}
+
+.section-info {
+    display: flex;
+    background: rgb(35, 31, 32);
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.section-info-des {
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
+    max-width: 800px;
+    margin: 20px;
+}
+
+.section-info-des > h2 {
+    font-size: 5.4em;
+}
+
+.section-info-des > p {
+    font-size: 2.4em;
+    line-height: 2;
+    text-align: left;
+}
+.section-info-img{
+    width: 800px;
+    height: 650px;
+    margin-top: 20px;
+}
+
+.section-info-img-1 {
+    box-shadow: 0px 0px 10px 1px rgba(251, 251, 251, 0.366);
+    width: 800px;
+    height: 600px;
+}
+
+/* section birday */
+
+.section-birday{
+}
+
+.section-birday-title{
+    text-align: center;
+    font-size: 4.6em;
+    font-family: 'Dancing Script', cursive;
+}
+
+.section-birday-list{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+.section-birday-item{
+    /* list-style-type: none; */
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.sec-bir-img {
+    width: 760px;
+    height: 1000px;
+}
+
+.section-birday-item h5 {
+    margin: 0;
+    padding-top:20px ;
+    font-size: 2.6em;
+    font-family: 'Mulish', sans-serif;
+}
+.section-birday-item p {
+    font-size: 2.4em;
+    font-family: 'Mulish', sans-serif;
+    font-style: italic;
+    margin: 5px 0 20px 0;
+}
+
+/* .section-birday-item::before{
+    content: "\f004  909";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(248, 250, 250);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 60px;
+    position: absolute;
+    background-color: rgba(205, 199, 199, 0.7);
+    width: 760px;
+    height: 1000px;
+    z-index: 0;
+    left: 110px;
+    transition: opacity 0.2s ease-in-out;
+} */
+
+.active-bir-click {
+    position: absolute; 
+    width: 760px;
+    height: 1000px;
+    background-color: rgba(205, 199, 199, 0.7);
+    align-items: center;
+    justify-content: center;
+    font-size: 2.0em;
+    color: #fff;
+    opacity: 0.1;
+    display: flex;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.active-bir-click-js{
+    opacity: 1;
+}
+
+.active-bir-click i {
+    color: #e20d0d;
+    font-size: 3.2em;
+    margin-right: 15px;
+}
+
+.active-bir-click p {
+    font-size: 3.2em;
+    font-weight: 400;
+    margin-right: px;
+}
+
+.active-bir-click .fa-comment{
+    color: #fff;
+    margin-left: 30px;
+}
+
+/* section hoi an */
+.section-travel {
+    background-color: #fff7f1;
+}
+
+.section-travel-title {
+    text-align: center;
+    font-size: 4.6em;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 40px;
+}
+
+.section-travel-HoiAn-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-travel-HoiAn-item{
+    position: relative;
+}
+
+.section-travel-HoiAn-item img {
+    width: 800px;
+    height: 1000px;
+}
+
+.section-travel-HoiAn-item h5{
+    margin: 0;
+    padding-top:20px ;
+    font-size: 2.6em;
+    font-family: 'Mulish', sans-serif;
+}
+
+.section-travel-HoiAn-item p{
+    font-size: 2.4em;
+    font-family: 'Mulish', sans-serif;
+    font-style: italic;
+    margin: 5px 0 40px 0;
+}
+
+.travel-HoiAn-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 89%;
+    background-color: rgba(61, 59, 59, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.travel-HoiAn-overlay.active{
+    opacity: 1;
+}
+
+.travel-HoiAn-overlay-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-size: 3.4em;
+}
+
+.section-travel-Hue-side {
+    transition: background-image 0.5s ease-in-out;
+}
+
+.section-travel-Hue-side img {
+    width: 100%;
+    object-fit: cover;
+    height: 888px;
+}
+
+.section-travel-Hue-side h5{
+    margin: 0;
+    padding-top:20px ;
+    font-size: 2.6em;
+    font-family: 'Mulish', sans-serif;
+    padding: 10px 0 0 10px;
+}
+
+.section-travel-Hue-side p{
+    font-size: 2.4em;
+    font-family: 'Mulish', sans-serif;
+    font-style: italic;
+    padding: 0 0 40px 10px;
+    margin: 5px 0 0 0;
+}
+
+/* Da Lat */
+.section-travel-DaLat{
+    background-color: #eaeaea;
+}
+
+.section-travel-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-travel-Dl-item {
+
+}
+
+.section-travel-Dl-img {
+    width: 800px;
+    height: 1000px;
+    object-fit: cover;
+    transition: transform 0.8s ease; /* Thêm hiệu ứng transition */
+    transform-style: preserve-3d; /* Giữ nguyên không gian 3D */
+}
+.section-travel-Dl-img.flip {
+    transform: rotateY(180deg);
+  }
+
+.section-travel-Dl-item h5 {
+    margin: 0;
+    padding-top:20px ;
+    font-size: 2.6em;
+    font-family: 'Mulish', sans-serif;
+    padding: 10px 0 0 10px
+}
+
+.section-travel-Dl-item p {
+    font-size: 2.4em;
+    font-family: 'Mulish', sans-serif;
+    font-style: italic;
+    padding: 0 0 40px 10px;
+    margin: 5px 0 0 0;
+}
+
+/* footer */
+#footer{
+    background: #231f20;
+}
+.title-footer{
+    display: flex;
+    align-items: center;
+}
+
+.title-footer h2{
+    font-size: 6.2em;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    text-align: left;
+    padding: 20px;
+    color: #fff;
+    margin-left: 60px;
+}
+.title-footer i{
+    font-size: 6.2em;
+    margin: 0;
+    text-align: left;
+    padding: 20px;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.footer-feedback{
+    margin-top: 20px;
+}
+.footer-feedback-btn{
+    width: 270px;
+    /* height: 70px; */
+    margin-left: 60px;
+    border-radius: 45px;
+    font-size: 3.2em;
+    padding: 25px;
+    margin-top: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.footer-contac {
+    display: flex;
+    font-size: 6.2em;
+    margin: 100px 0 0 60px;
+}
+.footer-contac i {
+    color: #fff;
+    margin: 10px 20px;
+}
+
+.footer-contact {
+    font-size: 3.2em;
+    margin: 30px 0 15px 60px;
+}
+
+.footer-contact label {
+    color: #fff;
+    font-size: 1.2em;
+   line-height: 1.2;
+   font-family: 'Mulish', sans-serif;
+}
+
+.footer-img{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.dialog {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .dialog-content {
+    background-color: #231f20;;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    font-size: 3.2em;
+    font-family: 'Mulish', sans-serif;
+    color: #fff;
+  }
+
+  .dialog-content h2 {
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    /* background: #888; */
+    padding: 10px;
+    margin: 10px 0;
+    color: #fff;
+    border-bottom: 1px solid;
+  }
+
+  .dialog-content label {
+    font-family: 'Mulish', sans-serif;
+    padding: 10px;
+  }
+  .dialog-content button {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+  }
+
+  .input-1 {
+    padding: 10px;
+    width: 97%;
+    margin: 20px 0;
+    font-family: 'Mulish', sans-serif;
+  }
+  .input-2{
+    padding: 10px;
+    width: 97%;
+    height: 250px;
+    margin-top: 20px;
+    font-family: 'Mulish', sans-serif;
+  }
+  .dialog-content-btn{
+    display: flex;
+    justify-content: space-between;
+  }
+  #sent-btn{
+    width: 150px;
+    margin-left: 0px;
+    font-size: 1.2em;
+    padding: 14px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+
+  #close-btn{
+    width: 150px;
+    margin-left: 0px;
+    font-size: 1.2em;
+    padding: 14px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+/* phien ban desktop */
+@media only screen and (min-width: 1180px) {
+    /* Các thuộc tính CSS cho các phần tử */
+    .section-info {
+        display: flex;
+        background: rgb(35, 31, 32);
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .ection-info-img{
+        width: 50%;
+    }
+    
+    .section-birday-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .section-birday-item img {
+        width: 382.33px;
+        height: 509.76px;
+        
+    }
+
+    .section-birday-item h5 {
+        margin: 0;
+        padding-top:10px ;
+        font-size: 1.6em;
+        font-family: 'Mulish', sans-serif;
+    }
+    .section-birday-item p {
+        font-size: 1.4em;
+        font-family: 'Mulish', sans-serif;
+        font-style: italic;
+        margin: 5px 0 20px 0;
+    }
+
+    .active-bir-click {
+        position: absolute; 
+        width: 382.33px;
+        height: 509.76px;
+        background-color: rgba(205, 199, 199, 0.7);
+        align-items: center;
+        justify-content: center;
+        font-size: 2.0em;
+        color: #fff;
+        opacity: 0.1;
+        display: flex;
+        transition: opacity 0.2s ease-in-out;
+    }
+    
+    .active-bir-click-js{
+        opacity: 1;
+    }
+
+    .active-bir-click i {
+        color: #e20d0d;
+        font-size: 1.4em;
+        margin-right: 15px;
+    }
+    
+    .active-bir-click p {
+        font-size: 1.4em;
+        font-weight: 400;
+        margin: 0 10px 0 0;
+    }
+    
+    .active-bir-click .fa-comment{
+        color: #fff;
+    }
+  }
+
+
+  
+
+
+
